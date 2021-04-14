@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header{
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background: rgb(255, 247, 201);
+}
+
+.header-cover{
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background: rgb(255, 247, 201);
+  z-index: 100;
+}
+
+header img{
+  height: 25px;
+  width: 100px;
+  padding-top: 15px;
+}
+
+header .fa-bars{
+  float: right;
+  padding: 22px 20px 0 0;
+}
+
+.header-nav{
+  background-color: rgb(255, 247, 201);
+  text-align: left;
+  transform: translateY(-110%);
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.header-menu li{
+  padding: 18px 0px;
+  border-bottom: 1px solid black;
+}
+
+.header-menu li a{
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+  font-size: 14px;
+}
+
+.header-menu li a:hover{
+  text-decoration: underline;
+}
+
+.header-menu .fas{
+  padding: 0 10px;
+}
+
+.header-icons .fab{
+  padding: 12px 10px;
+}
+
+.header-icons .fab:hover{
+  opacity: 0.3;
+}
+
+
+.header-icons{
+  border-bottom: 1px solid black;
+}
+
+.drawer-btn:checked ~ .header-nav{
+  transform: translateY(10%);
+}
+
+.drawer-btn{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transform: scale(1.5);
+  opacity: 0;
+  z-index: 200;
+}
+
+.drawer-btn:hover{
+  cursor: pointer;
+}
+
+body {
+    text-size-adjust: 100%;
+    overflow-x: hidden;
+    color: rgb(0, 0, 0);
+    font: 300 14px / 1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    background: rgb(255, 247, 201);
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+  vertical-align: bottom;
+}
+
+.sidebar{
+    width: 20%;
+    position:fixed;
+    right: 0;
+    height: 100%;
+}
+
+.side-logo{
+    height: 22.42px;
+    width: 87px;
+    padding: 25px 0 50px 0;
+}
+
+.side-contents{
+    padding-left: 16%;
+}
+
+.side-menu li a{
+    font-size: 14px;
+    color: #000;
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+  }
+
+.side-menu li a:hover{
+    text-decoration: underline;
+}
+
+.side-menu li{
+    padding-bottom: 25px;
+}
+
+.side-icons .fab{
+    margin: 45px 10px 0 0;
+}
+
+.side-icons .fab:hover{
+    opacity: 0.3;
+}
+
+.contents{
+  width: 80%;
+}
+
+.top-img{
+  width: 100%;
+}
+
+.message-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading{
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+  font-size: 22px;
+  padding: 80px 0 20px 0;
+  margin-bottom: 50px;
+  border-bottom: 3px solid black;
+  display: inline-block;
+}
+
+.txtarea{
+  text-align: left;
+  padding-bottom: 80px;
+}
+
+.photo-wrapper img{
+  width: 33.3333333%;
+}
+
+span .big-photo{
+  width: 100%;
+}
+
+.brand-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand-item{
+  width: 25%;
+  padding: 0 25px;
+  text-align: left;
+}
+
+.brand-item img{
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.brand-contents{
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
+}
+
+.project-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 120px;
+  border-bottom: 1px solid black;
+}
+
+.project-item{
+  display: flex;
+  padding-bottom: 70px;
+}
+
+.project-item img{
+  width: 375px;
+  height: 225px;
+  padding-right: 20px;
+}
+
+.project-item p{
+  text-align: left;
+}
+
+.company-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.company-contents{
+  padding-top: 30px;
+  display: flex;
+  padding-bottom: 208px;
+}
+
+.address{
+  text-align: left;
+  margin-right: 12%;
+}
+
+.ggmap{
+  width: 60%;
+  position: relative;
+  padding-bottom: 25%;
+}
+
+iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer{
+  width: 80%;
+  text-align: center;
+}
+
+footer p{
+  padding-bottom: 60px;
+  font-size: 12px;
+}
+
+footer a{
+  color: blue;
+}
